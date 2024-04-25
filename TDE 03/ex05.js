@@ -10,7 +10,7 @@ const objeto =
     senha: 'jps201104'
 }
 
-const validacao = (objeto) =>
+const validarNome = (objeto) =>
 {
     if (objeto.nome.length > 3) return true 
     return false
@@ -22,4 +22,4 @@ function validarDados(validacao, objeto)
     return false
 }
 
-console.log(validarDados(validacao, objeto))
+console.log(validarDados(validarNome, objeto))

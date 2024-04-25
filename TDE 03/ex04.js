@@ -5,12 +5,6 @@
 
 const array = [10, 20, 50, 99, -18, -510, 220]
 
-const filtro = (elemento) => 
-{
-    if (elemento > -20 && elemento < 100) return true
-    return false
-}
-
 function filtrarArray(filtro, array)
 {
     let novoArray = []
@@ -22,5 +16,5 @@ function filtrarArray(filtro, array)
 }
 
 
-console.log(filtrarArray(filtro, array))
+console.log(filtrarArray((e) => e > -20 && e < 100, array))
 
