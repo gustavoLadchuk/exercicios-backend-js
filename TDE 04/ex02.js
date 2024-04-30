@@ -2,7 +2,7 @@ function soma(numero1, numero2)
 {
    return new Promise((resolve, reject) =>
 {
-    resultado = numero1 + numero2
+    const resultado = numero1 + numero2
 
     if (resultado % 2 == 0) 
     resolve("A operação foi concluída com sucesso, o numero somado é par: "+ resultado)
