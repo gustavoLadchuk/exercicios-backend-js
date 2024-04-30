@@ -1,0 +1,15 @@
+{
+  "name": "tde-05",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ex01.js",
+  "scripts": {
+    "start": "node ex02.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1"
+  }
+}
