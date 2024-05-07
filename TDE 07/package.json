@@ -2,10 +2,10 @@
   "name": "tde-06",
   "version": "1.0.0",
   "description": "",
-  "main": "TDE 06.js",
+  "main": "TDE 07.js",
   "scripts": {
-    "start": "node TDE 06.js",
-    "dev": "nodemon TDE 06.js",
+    "start": "node TDE 07.js",
+    "dev": "nodemon TDE 07.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
