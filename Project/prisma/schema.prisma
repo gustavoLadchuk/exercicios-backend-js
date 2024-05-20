@@ -16,3 +16,9 @@ model tasks {
   description String
   isDone Boolean @default(false)
 }
+
+model users {
+  id Int @id @default(autoincrement())
+  email String @unique
+  password String
+}

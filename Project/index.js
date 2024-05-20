@@ -1,9 +1,11 @@
 const express = require("express")
 const server = express()
-const { router } = require("./routes/tasks")
+const { router: tasks } = require('./routes/tarefas')
+const { router: users } = require('./routes/users')
 
 server.use(express.json())
-server.use(router)
+server.use(tasks)
+server.use("/v1",users)
 
 const port = 5000
 
