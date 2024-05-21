@@ -4,8 +4,8 @@ const { router: tasks } = require('./routes/tarefas')
 const { router: users } = require('./routes/users')
 
 server.use(express.json())
-server.use(tasks)
-server.use("/v1",users)
+server.use("/v1", tasks)
+server.use("/v1", users)
 
 const port = 5000
 
@@ -14,6 +14,13 @@ server.get('/health', (req, res) => {
     res.json({
         "status": "running"
     })
+})
+
+server.use((req, res, next) => {
+    console.log(req.url)
+    console.log(req.method)
+    console.log(req.body)
+    next()
 })
 
 server.listen(port, () => {
